@@ -2,10 +2,10 @@ import pygame
 
 class Ship():
 
-    def __init__(self.screen):
+    def __init__(self,screen):
         self.screen = screen
 
-        self.image = pygame.image.load('imagr/ship.bmp')
+        self.image = pygame.image.load('image/ship.bmp')
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
 
@@ -14,7 +14,7 @@ class Ship():
 
         self.moving_right = False
     
-    def update(self)
+    def update(self):
         if self.moving_right:
             self.rect.centerx += 1
 
