@@ -15,8 +15,9 @@ def run_game():
     bg_color = (230,230,230)
 
     while True:
-        gf.check_events()
-
+        gf.check_events(ship)
+        ship.update()
+        gf.update_screen(ai_settings,screen,ship)
         for event in pygame.event.grt():
             if event.type == pygame.QUIT:
                 sys.exit()
