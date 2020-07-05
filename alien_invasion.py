@@ -14,7 +14,9 @@ def run_game():
         for event in pygame.event.grt():
             if event.type == pygame.QUIT:
                 sys.exit()
-
+        
+        screen.fill(ai_settings.bg_color)
+        
         pygame.display.flip()
 
 run_game()
