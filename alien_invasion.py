@@ -3,6 +3,7 @@ import pygame
 
 from settings import Settings
 from ship import Ship
+import game_functions as gf
 
 def run_game():
     pygame.init()
@@ -14,6 +15,8 @@ def run_game():
     bg_color = (230,230,230)
 
     while True:
+        gf.check_events()
+
         for event in pygame.event.grt():
             if event.type == pygame.QUIT:
                 sys.exit()
